@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #bc4123;
+  --secondary: #2b3452;
+}
+
 * {
   color: #FFFFFF;
   margin: 0;
@@ -11,4 +16,53 @@ body {
   margin: 0;
   padding: 20px;
   background: #2B3452;
+}
+
+header nav a {
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+header nav a.active {
+  background-color: var(--primary);
+}
+
+.help-layout nav a {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.help-layout nav a:hover {
+  border-color: var(--primary);
+}
+
+.help-layout nav a.active {
+  background: var(--primary);
+}
+
+.faq .question {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+form input, form label span, form textarea {
+  display: block;
+}
+
+form input, form textarea {
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  width: 300px;
+  color: var(--secondary);
+  outline: none;
+}
+
+form label span {
+  margin-bottom: 10px;
 }
