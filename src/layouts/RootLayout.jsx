@@ -9,6 +9,7 @@ const RootLayout = () => {
                     <h1 className="mr-auto border-b-primary border-b-[3px] text-lg font-bold tracking-widest">JobaRouter</h1>
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="about">About</NavLink>
+                    <NavLink to="careers">Careers</NavLink>
                     <NavLink to="help">Help</NavLink>
                 </nav>
             </header>
