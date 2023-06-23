@@ -6,9 +6,9 @@ const Careers = () => {
     return (
         <div className="careers">
             { careers.map( career => (
-                <Link to="/" key={ career.id }>
-                    <p>{ career.title }</p>
-                    <p>{ career.location }</p>
+                <Link to={ String( career.id ) } key={ career.id }>
+                    <p className="font-semibold">{ career.title }</p>
+                    <p className="font-medium">{ career.location }</p>
                 </Link>
             ))}
         </div>
