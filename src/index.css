@@ -88,3 +88,26 @@ form label span {
  font-size: 0.8em;
  color: #bbb;
 }
+
+.bread-crumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.bread-crumbs > *{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.bread-crumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+
+.bread-crumbs .crumb:last-child:after {
+  display: none;
+}
+
+.bread-crumbs .crumb a {
+  color: #ddd;
+}
